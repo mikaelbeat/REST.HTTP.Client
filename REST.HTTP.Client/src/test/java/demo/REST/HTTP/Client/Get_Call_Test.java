@@ -18,6 +18,7 @@ public class Get_Call_Test extends Test_Base{
 	HTTP_Client driver;
 	String APIURI;
 	CloseableHttpResponse apiResponse;
+	String responseValue;
 	
 	@BeforeTest
 	public void setUp() {
@@ -43,7 +44,10 @@ public class Get_Call_Test extends Test_Base{
 		JSONObject responseJSON = new JSONObject(responseString);
 		System.out.println("API Response JSON: " + responseJSON);
 		
-		String responseValue = Test_Utils.getValueByJPath(responseJSON, "/per_page");
+		responseValue = Test_Utils.getValueByJPath(responseJSON, "/per_page");
 		Assert.assertEquals(responseValue, "3");
+		Assert.assertEquals(Test_Utils.getValueByJPath(responseJSON, "/data[0]/first_name"), "George");
+		Assert.assertEquals(Test_Utils.getValueByJPath(responseJSON, "/data[1]/last_name"), "Weaver");
+		Assert.assertEquals(Test_Utils.getValueByJPath(responseJSON, "/data[2]/id"), "3");
 	}
 }
