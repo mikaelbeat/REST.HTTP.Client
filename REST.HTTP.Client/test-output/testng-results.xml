@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2222" started-at="2018-06-11T09:31:09Z" finished-at="2018-06-11T09:31:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2222" started-at="2018-06-11T09:31:09Z" finished-at="2018-06-11T09:31:11Z">
+      <class name="demo.REST.HTTP.Client.Get_Call_Test">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:demo.REST.HTTP.Client.Get_Call_Test@5c7fa833]" name="setUp" is-config="true" duration-ms="21" started-at="2018-06-11T09:31:09Z" finished-at="2018-06-11T09:31:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="Get_Call_Response_Test()[pri:0, instance:demo.REST.HTTP.Client.Get_Call_Test@5c7fa833]" name="Get_Call_Response_Test" duration-ms="1672" started-at="2018-06-11T09:31:09Z" finished-at="2018-06-11T09:31:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_Call_Response_Test -->
+        <test-method status="PASS" signature="Get_Call_Test()[pri:0, instance:demo.REST.HTTP.Client.Get_Call_Test@5c7fa833]" name="Get_Call_Test" duration-ms="481" started-at="2018-06-11T09:31:11Z" finished-at="2018-06-11T09:31:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Get_Call_Test -->
+      </class> <!-- demo.REST.HTTP.Client.Get_Call_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
